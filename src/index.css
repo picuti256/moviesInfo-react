@@ -1,0 +1,21 @@
+* {
+    font-family: Helvetica;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #0D0D0C;
+    color: #BABDBF;
+}
+
+a {
+    text-decoration: none;
+    color: #F2F2F2;
+    transition: .5s;
+}
+
+a:hover {
+    color: #735F58;
+}
