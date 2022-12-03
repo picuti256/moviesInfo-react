@@ -5,6 +5,8 @@ import {Routes, Route, BrowserRouter } from 'react-router-dom';
 
 import App from './App';
 import Home from './pages/Home';
+import HomeTvShows from './pages/HomeTvShows';
+import TvShow from './components/TvShows';
 import Movie from './components/Movie';
 import Search from './pages/Search';
 
@@ -16,7 +18,9 @@ ReactDOM.createRoot(document.getElementById('root')).render(
       <Routes>
         <Route element={<App />}>
           <Route path="/" element={<Home />} />
+          <Route path="tv/" element={<HomeTvShows />} />
           <Route path="movie/:id" element={<Movie />} />
+          <Route path="tv/:id" element={<TvShow/>} />
           <Route path="search" element={<Search />} />
         </Route>
       </Routes>
