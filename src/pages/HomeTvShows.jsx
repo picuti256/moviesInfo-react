@@ -3,8 +3,8 @@ import TvShowCard from "../components/TvShowCard";
 
 import './movieGrid.css';
 
-const tvShowAPI = import.meta.env.VITE_API_TVSHOW;
-const apiKey = import.meta.env.VITE_API_KEY;
+const tvShowAPI = process.env.VITE_API_TVSHOW;
+const apiKey = process.env.VITE_API_KEY;
 
 const home = () => {
   const [topTvShows, setTopTvShows] = useState([]);
