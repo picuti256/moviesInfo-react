@@ -1,8 +1,9 @@
 import { useEffect, useState } from "react";
 import { useSearchParams } from "react-router-dom";
 import TvShowCard from "../components/TvShowCard";
-const searchURL = import.meta.env.VITE_SEARCH_TV;
-const apiKey = import.meta.env.VITE_API_KEY;
+
+const searchURL = process.env.VITE_SEARCH_TV;
+const apiKey = process.env.VITE_API_KEY;
 
 import "./movieGrid.css";
 
