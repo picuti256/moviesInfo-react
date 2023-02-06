@@ -6,8 +6,8 @@ import TvShowCard from "../TvShowCard";
 
 import "./TvShows.css";
 
-const tvShowURL = import.meta.env.VITE_API_TVSHOW;
-const apiKey = import.meta.env.VITE_API_KEY;
+const tvShowURL = process.env.VITE_API_TVSHOW;
+const apiKey = process.env.VITE_API_KEY;
 
 const tvShow = () => {
 	const { id } = useParams();
